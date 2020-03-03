@@ -60,7 +60,120 @@ h5 {
 
 /* ========================================================================*/
 
+body {
+	display: flex;
+	justify-content: center;
+	background-color: darkred ;
 
+}
+
+main {
+	display: flex;
+	justify-content: center;
+	width: 102.4rem;
+	background-color: var(--light-grey);
+
+}
+
+form {
+	width: 80%;	
+	background-color: var(--white);
+	padding: 1.6rem;
+	margin: 1.6rem;
+}
+
+h2 {
+	font-family: 'DM Serif Display',sans-serif;
+	border-bottom: 8px solid var(--dark-grey);
+	width: 100%;
+}
+
+h2 > span {
+	font-family: 'DM Sans', sans-serif;	
+	font-size: 1.6rem;
+	line-height: 2.4rem;
+	vertical-align: super;
+	color: var(--required);
+}
+
+.flex-wrapper {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.personal-info {
+	width: calc(50% - 1.6rem);
+	margin: 1.6rem 0;
+}
+
+label {
+	display: block;
+	font-size: 1.6rem;
+	line-height: 2.4rem;
+	margin-bottom: 0.6rem;
+}
+
+input[type=text] {
+	width: 100%;
+	padding: 0.8rem;
+}
+
+input[type=text]:required:focus {
+	background-color: whitesmoke;
+	background-image: 
+}
+
+.message {
+	width: 100%;
+}
+
+textarea {
+	width: 100%; 
+	height: 15rem;
+}
+
+::placeholder {
+	color: var(--required);
+}
+
+input[type="submit"]{
+	background-color: var(--white);
+	border: 2px solid var(--valid);
+	color: var(--valid);
+	font-size: 1.6rem;
+	line-height: 2.4rem;
+	border-radius: 0.4rem;
+	padding: 0.5rem;
+	margin-top: 1.6rem;
+}
+
+input[type="submit"]:hover, input[type="submit"]:focus {
+	transition-duration: 1s;
+	background-color: var(--valid);
+	color: var(--white);
+}
+
+input[type="text"]:required {
+	border-bottom: 4px solid var(--required);
+	background-image: url(../images/star-circled.svg);
+	background-repeat: no-repeat;
+	background-position-x: calc(100% - 0.8rem);
+}
+
+input[type="text"]:required:focus:invalid {
+	border-bottom: 4px solid var(--invalid);
+	background-image: url(../images/close-circled.svg);
+	background-repeat: no-repeat;
+	background-position-x: calc(100% - 0.8rem);
+}
+
+input[type="text"]:required:focus:valid {
+	border-bottom: 4px solid var(--valid);
+	background-image: url(../images/check-circled.svg);
+	background-repeat: no-repeat;
+	background-position-x: calc(100% - 0.8rem);
+}
 
 /*======================================================================== */
 

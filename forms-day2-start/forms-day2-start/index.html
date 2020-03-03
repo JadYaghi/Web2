@@ -31,12 +31,14 @@
 						
 						<div class="personal-info">
 							<label for="first-name">First Name</label>
-							<input type="text" id="first-name" placeholder="Ryley">
+							<input type="text" id="first-name" required pattern="[A-Za-z]+" placeholder="Ryley">
 						</div>
+
+						<!-- Auto complete in input works in otheer browser then chrome-->
 
 						<div class="personal-info">
 							<label for="last-name">Last Name</label>
-							<input type="text" id="last-name" placeholder="Smith">
+							<input type="text" id="last-name" required pattern="[A-Za-z]+" placeholder="Smith">
 						</div>
 						
 						<div class="message">

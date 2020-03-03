@@ -1,0 +1,128 @@
+<!doctype html>
+<html class="no-js" lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Form Sturcture Demo</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1>HTML5 Forms</h1>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <form action="#">
+                <fieldset>
+                    <!--Group fields together-->
+                    <legend>General Field</legend>
+                    <div>
+                        <label for="general-text">General Text</label>
+                        <input class ="full-width-container" id="general-text" type="text" name="text-field">
+                    </div>
+
+                    <div>
+                        <label for="email">Email</label>
+                        <input class ="full-width-container" id="email" type="email" name="email">
+                    </div>
+
+                    <div>
+                        <label class="full-width-field" for="phone">Phone</label>
+                        <input class ="full-width-container" id="phone" type="tel" name="phone" maxlength="10">
+                    </div>
+
+                    <div>
+                        <label class="full-width-field" for="url">Website</label>
+                        <input class ="full-width-container" id="url" type="url" name="url">
+                    </div>
+
+                    <div>
+                        <label class="full-width-field" for="password">Password</label>
+                        <input class ="full-width-container" id="password" type="password" name="password">
+                    </div>
+
+                    <div>
+                        <label class="full-width-field" for="range-slider">Range Slider</label>
+                        <input class ="full-width-container" id="range-slider" type="range" name="range-slider" min="0" max="20" value="10" step="2">
+                    </div>
+
+                    <div>
+                        <input type="color" id="background" name="background" for="background">Color</label>
+                        <label for="color"></label>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Radio Button Field</legend>
+                    <div class="inner-flex-center">
+                        <input class="larger-radio-check-box" id="chinchilla" type="radio" name="web"
+                            value="chinchilla">
+                        <label for="chinchilla">Chinchilla</label>
+                    </div>
+                    <div class="inner-flex-center">
+                        <input class="larger-radio-check-box" id="bunny" type="radio" name="web" value="bunny">
+                        <label for="bunny">Bunny</label>
+                    </div>
+                    <div class="inner-flex-center">
+                        <input class="larger-radio-check-box" id="guinea-pig" type="radio" name="web"
+                            value="guinea-pig">
+                        <label for="guinea-pig">Guinea Pig</label>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Checkbox Field</legend>
+                    <div class="inner-flex-center">
+                        <input class="larger-radio-check-box" id="HTML" type="checkbox" name="web" value="HTML">
+                        <label for="HTML">HTML</label>
+                    </div>
+                    <div class="inner-flex-center">
+                        <input class="larger-radio-check-box" id="CSS" type="checkbox" name="web" value="CSS">
+                        <label for="CSS">CSS</label>
+                    </div>
+                    <div class="inner-flex-center">
+                        <input class="larger-radio-check-box" id="JS" type="checkbox" name="web" value="JS">
+                        <label for="JS">JS</label>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Email with Option Fields</legend>
+                    <div>
+                        <label class="full-width-field" for="select-field">Select Field</label>
+                        <select id="select-field" name="select-field">
+                            <option value="default" selected>Please Select an Option</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows = "5" cols = "3"></textarea>
+                    </div>
+
+                    <div>
+                        <input type = "button" value = "Submit Message" name = "submit-message" accesskey="s">
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Full Name</legend>
+                    <input class = "full-width-container" id = "first-name" type = "text" name = "first-name" placeholder="Ben">
+                    <label for="first-name">First Name</label>
+                </fieldset>
+            </form>
+        </div>
+    </main>
+
+</body>
+
+</html>

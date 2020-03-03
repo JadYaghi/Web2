@@ -1,0 +1,300 @@
+html {
+    color: #222;
+    font-size: 0.625rem;
+    line-height: 1.5;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+body {
+    font-size:1.8rem;
+}
+
+header {
+    margin-bottom: 3rem;   
+}
+
+h1 {
+    width: 100%;
+    padding: 1.5rem;
+    border-bottom: 2.4rem solid black;
+    text-align: left;
+    font-size:6.4rem;
+}
+
+header, main {
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    border:  1px solid red;
+    width: 120rem;
+    display: flex;
+    justify-content: center;
+}
+
+/* another way to call the class attribute is like this. This is important to understand because other attributes besides class and id can be used to specify certain html elements. This is particularly important with styling HTML forms with CSS. */
+
+/* div[class=container] {
+    width: 120rem;
+    display: flex;
+    justify-content: center;
+} */
+
+
+/* ====================================================================
+    Forms
+   ==================================================================== */
+    form {
+        width: 100%;
+    }
+
+
+/* ====================================================================
+    Form Fieldsets
+   ==================================================================== */
+
+/*
+ * Remove default fieldset styles.
+ */
+ fieldset {
+     border: none;
+     margin-bottom: 2.5rem;
+ }
+
+
+
+/* ====================================================================
+    Form Legend
+   ==================================================================== */
+
+   legend {
+       font-size: 2.5rem;
+   }
+
+
+/* ====================================================================
+    Form Labels
+   ==================================================================== */
+
+
+
+/* ====================================================================
+    Form Inputs & Selects
+   ==================================================================== */
+    input[type=radio], input[type=checkbox]{
+        margin-top: 0;
+        background-color: aqua;
+        /*height: 5rem;*/
+        transform: scale(1.8);
+    }
+
+
+/* ====================================================================
+    Form Text Area
+   ==================================================================== */
+
+   textarea {
+       width: 60rem;
+   }
+
+   label[for="message"] {
+       display: block; /*force vertical stack*/
+   }
+
+
+
+/* ====================================================================
+    Additional Styling
+   ==================================================================== */
+
+   .full-width-container {
+       width: 100%;
+   }
+
+   input[name="first-name"] { /*Added padding inside text field*/
+       padding: 1rem;
+   }
+
+
+
+/* ====================================================================
+    Additional information on forms
+   ==================================================================== */
+
+
+
+
+/* =======================================
+* input > email *
+========================================== */
+
+/* If you want to look in to it more:
+https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/email */
+
+
+
+/* ========================================
+* input > phone *
+=========================================== */
+
+/* If you want to look in to it more:
+https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/tel */
+
+
+
+/* ======================================== 
+* input > URL *
+=========================================== */
+
+/* If you want to look in to it more:
+https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/url */
+
+
+
+/* ======================================== 
+* input > password *
+=========================================== */
+
+/* If you want to look in to it more:
+https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/password */
+
+
+
+/* ======================================== 
+* input > range selector *
+=========================================== */
+
+/* There are not too many ways you can edit this using CSS. If you want to look in to it more:
+https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/range */
+
+
+
+/* ======================================== 
+* input > color selector *
+=========================================== */
+
+/* If you want to look in to it more:
+ https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/color */
+
+
+
+/* ======================================== 
+* input > radio selector *
+=========================================== */
+
+/* If you want to look in to it more:
+https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/radio */
+
+
+
+/* ======================================== 
+* input > checkbox selector *
+=========================================== */
+
+/* If you want to look in to it more:
+https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/checkbox */
+
+
+
+/* ========================================= 
+* element > text area *
+============================================ */
+
+/* If you want to look in to it more:
+https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea */
+
+
+
+/* ========================================= 
+* input > submit *
+============================================ */
+
+/* If you want to look in to it more:
+https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/submit */
+
+
+
+/* ========================================= 
+* element > select *
+============================================ */
+
+/* If you want to look in to it more:
+https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select */
+
+
+
+/* =========================================
+*  Helper classes *
+============================================ */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden {
+    display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+

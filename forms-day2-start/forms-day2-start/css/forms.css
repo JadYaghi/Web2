@@ -1,0 +1,88 @@
+html {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+*, *:before, *:after {
+	-webkit-box-sizing: inherit;
+	-moz-box-sizing: inherit;
+	box-sizing: inherit;
+}
+
+/* ========================================================================
+
+General Typography Styles
+
+======================================================================== */
+
+p, h6,h5,h4,h3,h2,h1,label,span {
+	color: var(--mid-grey);
+}
+p, h6 {
+	font-size: 1.6rem;
+	line-height: 2.4rem;
+	margin-bottom: 2.4rem;
+}
+
+h1 {
+	font-size: 3.981rem;
+	line-height: 4.8rem;
+	margin-bottom: 2.4rem;
+}
+
+h2 {
+	font-size: 3.318rem;
+	line-height: 4.8rem;
+	margin-bottom: 2.4rem;
+}
+
+h3 {
+	font-size: 2.765rem;
+	line-height: 4.8rem;
+	margin-bottom: 2.4rem;
+}
+
+h4 {
+	font-size: 2.304rem;
+	line-height: 2.4rem;
+	margin-bottom: 2.4rem;
+}
+
+h5 {
+	font-size: 1.92rem;
+	line-height: 2.4rem;
+	margin-bottom: 2.4rem;
+}
+
+
+/* This is the industry standard way of adding box-sizing to the project. It covers everything, plus Pseudo elements and also allows you to specify other box-sizing methods if you need it for some reason. */
+
+/* ========================================================================*/
+
+
+
+/*======================================================================== */
+
+/* Starting Variables */
+
+html {
+	font-size: 62.5%;
+	/* this gives us base font-size of 10px for rem calculations */
+	font-family: 'DM Sans', sans-serif;
+	
+	/* font-family: 'DM Serif Display', serif; */
+	/* We will copy and paste this to use for Serif Headings */
+
+	/* Custom Variables */
+	--dark-grey: #4E4F51;
+	--mid-grey: #686A6D;
+	--light-grey: #E8ECEF;
+	--white: #F4F7F9;
+	--valid: #58C19C;
+	--invalid: #D14E4E;
+	--required: rgba(101,201,224, 1);
+	--required-15: rgba(101,201,224, 0.15);
+	--required-50: rgba(101,201,224, 0.5);
+}
+

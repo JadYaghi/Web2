@@ -1,0 +1,72 @@
+html {
+    font: 62.5%;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    font-size: 1.6rem;
+    background-color: darkorange;
+}
+
+main {
+    width: 102.4rem;
+    background-color: burlywood;
+    display: flex;
+    justify-content: center;
+    padding: 2.6rem;
+}
+
+h1 {
+    text-align: center;
+    font-size: 3rem;    
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 75%;
+    background-color: whitesmoke;
+    padding: 2.6rem;
+}
+
+label, fieldset, legend {
+    margin: 1rem 0;
+}
+
+input[type="number"] {
+    width: 5rem;
+}
+
+.fornum{
+    display: flex;
+    justify-content: space-between;
+    width: 30%;
+    height: 70%;
+}
+
+.agreement-container{
+    padding: 1rem 0;
+}
+
+input[type=radio],input[type=checkbox] {
+    transform: scale(1.2);    
+}
+
+div:last-of-type {
+    display: flex;
+    justify-content: space-between;
+}
+
+input[type="text"]:required, input[type="email"]:required, input[type="tel"]:required {	
+	border-bottom: 4px solid darkcyan;
+}
+
+input[type="text"]:valid:focus:required, input[type="email"]:valid:focus:required, input[type="tel"]:valid:focus:required{
+    border-bottom: 4px solid greenyellow;
+}
+
+input[type="text"]:invalid:focus:required, input[type="email"]:invalid:focus:required,input[type="tel"]:invalid:focus:required{
+    border-bottom: 4px solid red;
+}

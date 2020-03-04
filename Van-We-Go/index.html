@@ -4,37 +4,90 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title></title>
+  <title>Rain Coat Painting</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-  <link rel="manifest" href="site.webmanifest">
-  <link rel="apple-touch-icon" href="icon.png">
-  <!-- Place favicon.ico in the root directory -->
-
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
-  <!--[if lte IE 9]>
-    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
-  <![endif]-->
+  <header>    
+  </header>
+  <main>    
+    <form action="">
+      <h1>Rain Coat Painting</h1>
+      <br/>
+      <label for="Name">Name:</label>
+      <input id="Name" required pattern="[A-Za-z]+" type="text" required>
 
-  <!-- Add your site or application content here -->
-  <p>Hello world! This is HTML5 Boilerplate.</p>
-  <script src="js/vendor/modernizr-3.6.0.min.js"></script>
-  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-  <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')</script>
-  <script src="js/plugins.js"></script>
-  <script src="js/main.js"></script>
+      <label for="Address">Address:</label>
+      <input id="Address" type="text" required>
 
-  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
-  <script>
-    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
-    ga('create', 'UA-XXXXX-Y', 'auto'); ga('send', 'pageview')
-  </script>
-  <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+      <label for="message">Message:</label>
+      <textarea name="message" id="message" ></textarea>
+
+      <label for="email">Email:</label>
+      <input id="email" type="email" required >
+
+      <label for="Phone">Phone #:</label>
+      <input id="Phone" type="tel" required pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+
+      <fieldset >
+        <legend >Preferred Method of Contact</legend>
+        <input Name="Conatct-method"  id="rad-Phone" type="radio">
+        <label for="rad-Phone">Phone</label>
+        
+        <input Name="Conatct-method" id="rad-Email" type="radio">   
+        <label for="rad-Email">Email</label>
+          
+      </fieldset>
+
+      <fieldset name="">
+        <legend>Rooms to Paint</legend>
+        <div>
+          <input Name="Rooms" id="Kitchen" type="checkbox">
+          <label for="Kitchen">Kitchen</label>
+        </div>
+        <div>
+          <input Name="Rooms" id="Bathroom" type="checkbox">
+          <label for="Bathroom">Bathroom(s)</label>
+        </div>
+        <div>
+          <input Name="Rooms" id="Living-room" type="checkbox">
+          <label for="Living-room">Living Room</label>
+        </div>
+        <div>
+          <input Name="Rooms" id="dining-room" type="checkbox">
+          <label for="dining-room">Dining Room</label>
+        </div>
+        <div>
+          <input Name="Rooms" id="bedroom" type="checkbox">
+          <label for="bedroom">Bedroom(s)</label>
+        </div>
+        <div class="fornum">
+          <label for="bed-num"># of Bedroom(s):</label>
+          <input id="bed-num" type="number" min="0">
+        </div>
+        <div class="fornum">
+          <label for="num-bath">Number of Bathrooms:</label>
+          <input id="num-bath" type="number" min="0">
+        </div>
+      </fieldset> <br/>
+      <label for="pref-week">Preferred Week:</label>
+      <input id="pref-week" type="date">
+
+      <div class="agreement-container">
+        <input id="terms" type="checkbox">
+        <label for="terms">Agree to terms?</label>
+        
+      </div>
+      <div class="submit">
+        <input id="reser" value="Reset" type="button">
+        <input id="submit" value="Submit" type="reset">
+      </div>
+    </form>
+  </main>
 </body>
 
 </html>

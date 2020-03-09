@@ -1,8 +1,13 @@
 html {
     color: #222;
-    font-size: 1em;
     line-height: 1.4;
+    box-sizing: border-box;
+    font-size: 62.5%; /* 10px */
   }
+
+  *, *:before, *:after {
+    box-sizing: inherit;
+}
 
   ::-moz-selection {
     background: #b3d4fc;
@@ -52,6 +57,108 @@ html {
   /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+
+   .hidden {
+    clip: rect(1px, 1px, 1px, 1px);
+    clip-path: inset(50%);
+    height: 1px;
+    width: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+}
+
+header {
+    display: block;
+    justify-content: center;
+    background-image: url(../img/Hikers-back.png);
+    background-repeat: no-repeat;
+    height: 790px;
+}
+
+div.inner-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 1280px; /* 1024px */
+}
+
+div.inner-container > img.logo {
+    height: 4.8rem;
+    width: 4.8rem;
+    /* border: 1px solid red; */
+    margin: 0 1.6rem;
+}
+
+nav > ul.flex-container {
+     border: 1px solid red; 
+    display: flex;
+    justify-content: flex-start;
+    align-items: center; 
+    height: 6.6rem;
+    background-color: #845a78;
+    width: 1280px;
+    
+}
+
+.menu > li {
+    padding: 2.1rem 1.6rem;
+    position: relative; 
+    white-space: nowrap;
+}
+
+.menu > li:hover {
+    border-bottom: 4.5px solid #ffffff;
+}
+
+.menu li a,
+.btn {
+    color: #faf5ff;
+    text-decoration: none;
+    display: block;
+}
+
+.btn {
+    border: 1px solid #FAF5FF;
+    padding: 0.4rem 0.8rem;
+    border-radius: 4px;
+}
+
+.btn:hover {
+    background-color: #faf5ff;
+    color:#000;
+}
+
+/* Step 2: position and hide the dropdown menu */
+.dropdown {
+    background-image: linear-gradient(0deg, rgba(68,51,122,1) 0%, rgba(107,70,193,1) 100%);
+    position: absolute;
+    left: 0;
+    top: 6.6rem;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.dropdown li {
+    display: flex;
+    align-items: center;
+    position: relative;
+    height: 6.6rem;
+    padding: 2.1rem 1.6rem;
+    border-bottom: 1px solid rgba(255,255,255, 0.5);
+}
+
+.dropdown-beside {
+    background-image: linear-gradient(0deg, rgba(68,51,122,1) 0%, rgba(107,70,193,1) 100%);
+    position: absolute;
+    left: 0;
+    visibility: hidden;
+    opacity: 0;
+}
+
+
+
 
 /* ==========================================================================
    Helper classes

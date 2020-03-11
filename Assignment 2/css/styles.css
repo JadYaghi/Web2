@@ -2,7 +2,8 @@ html {
     color: #222;
     line-height: 1.4;
     box-sizing: border-box;
-    font-size: 62.5%; /* 10px */
+    font-size: 16px;
+    font-family: 'Quicksand', sans-serif;
   }
 
   *, *:before, *:after {
@@ -88,24 +89,24 @@ div.inner-container > img.logo {
     height: 4.8rem;
     width: 4.8rem;
     /* border: 1px solid red; */
-    margin: 0 1.6rem;
+    margin: 0 0.6rem;
 }
 
 nav > ul.flex-container {
-     border: 1px solid red; 
-    display: flex;
-    justify-content: flex-start;
-    align-items: center; 
-    height: 6.6rem;
-    background-color: #845a78;
-    width: 1280px;
-    
+  /* border: 1px solid red;  */
+  display: flex;
+  justify-content: left;
+  align-items: center; 
+  height: 3.6rem;
+  background-color: #845a78;
+  width: 1280px;    
 }
 
 .menu > li {
-    padding: 2.1rem 1.6rem;
+    padding: 1.1rem 1.6rem;
     position: relative; 
     white-space: nowrap;
+    margin: 0 1.5rem;
 }
 
 .menu > li:hover {
@@ -114,9 +115,9 @@ nav > ul.flex-container {
 
 .menu li a,
 .btn {
-    color: #faf5ff;
-    text-decoration: none;
-    display: block;
+  color: #faf5ff;
+  text-decoration: none;
+  display: block;
 }
 
 .btn {
@@ -130,35 +131,51 @@ nav > ul.flex-container {
     color:#000;
 }
 
-/* Step 2: position and hide the dropdown menu */
-.dropdown {
+.drop-menu {
     background-image: linear-gradient(0deg, rgba(68,51,122,1) 0%, rgba(107,70,193,1) 100%);
     position: absolute;
     left: 0;
-    top: 6.6rem;
+    top: 3.5rem;
     visibility: hidden;
     opacity: 0;
 }
 
-.dropdown li {
-    display: flex;
+.drop-menu li {
+    display: block;
     align-items: center;
     position: relative;
-    height: 6.6rem;
+    height: 3.5rem;
     padding: 2.1rem 1.6rem;
-    border-bottom: 1px solid rgba(255,255,255, 0.5);
 }
 
-.dropdown-beside {
-    background-image: linear-gradient(0deg, rgba(68,51,122,1) 0%, rgba(107,70,193,1) 100%);
-    position: absolute;
-    left: 0;
-    visibility: hidden;
-    opacity: 0;
+.drop-menu div {
+  top: 0;
+  left: 100%;
 }
 
+.menu li:hover > div, .menu li:hover > div > .drop-menu {
+  visibility: visible;
+  opacity: 1;
+}
 
+.drop-menu {
+  transition: all 0.5s ease;
+}
 
+.menu li:focus-within > ul,
+.menu li > ul:focus {
+    visibility: visible;
+    opacity: 1;
+    display: block;
+}
+
+menu li > div > li {
+  min-width: 1280px;
+}
+
+.menu div {
+  
+}
 
 /* ==========================================================================
    Helper classes
